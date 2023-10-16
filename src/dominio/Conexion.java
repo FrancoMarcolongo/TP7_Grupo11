@@ -12,7 +12,7 @@ public class Conexion {
 	{
 		try
 		{
-			this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/SegurosGroup","root","12345678");
+			this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/SegurosGroup","root","50111");
 			this.connection.setAutoCommit(false);
 		}
 		catch(Exception e)

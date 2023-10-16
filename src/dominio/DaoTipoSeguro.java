@@ -12,7 +12,7 @@ public class DaoTipoSeguro {
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        List<TipoSeguro> tipoSeguros = new ArrayList<>();
+        List<TipoSeguro> tipoSeguros = new ArrayList<TipoSeguro>();
 
         
         try {
