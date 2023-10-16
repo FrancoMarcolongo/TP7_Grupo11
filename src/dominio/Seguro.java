@@ -3,8 +3,16 @@ package dominio;
 public class Seguro {
 	private int idSeguro;
     private String descripcion;
-    private int idTipo;
-    private double costoContratacion;
+    private TipoSeguro tipo;
+    public TipoSeguro getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(TipoSeguro tipo) {
+		this.tipo = tipo;
+	}
+
+	private double costoContratacion;
     private double costoAsegurado;
 
     public int getIdSeguro() {
@@ -23,13 +31,6 @@ public class Seguro {
         this.descripcion = descripcion;
     }
 
-    public int getIdTipo() {
-        return idTipo;
-    }
-
-    public void setIdTipo(int idTipo) {
-        this.idTipo = idTipo;
-    }
 
     public double getCostoContratacion() {
         return costoContratacion;
@@ -49,7 +50,7 @@ public class Seguro {
     
     @Override
     public String toString() {
-        return "Seguro [idSeguro=" + idSeguro + ", descripcion=" + descripcion + ", idTipo=" + idTipo
+        return "Seguro [idSeguro=" + idSeguro + ", descripcion=" + descripcion + ", idTipo=" + tipo
                 + ", costoContratacion=" + costoContratacion + ", costoAsegurado=" + costoAsegurado + "]";
     }
 }

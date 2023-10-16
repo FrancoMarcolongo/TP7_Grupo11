@@ -20,7 +20,7 @@
 	<div id="header">
         <div id="nav"><ul>
                 <li><a href="Inicio.jsp">Inicio</a></li>
-                <li><a href="AgregarSeguro.jsp">Agregar Seguro</a></li>
+                <li><a href="servletSeguro">Agregar Seguro</a></li>
                 <li><a href="ListarSeguros.jsp">Listar Seguros</a></li>
             </ul>
         </div>
