@@ -59,11 +59,11 @@ public class DaoSeguro {
         return seguro;
     }
     
-    public List<Seguro> listarSeguros() {
+    public ArrayList<Seguro> listarSeguros() {
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
-        List<Seguro> listaSeguros = new ArrayList<Seguro>();
+        ArrayList<Seguro> listaSeguros = new ArrayList<Seguro>();
         DaoTipoSeguro daoTipoSeguro = new DaoTipoSeguro();
 
         try
