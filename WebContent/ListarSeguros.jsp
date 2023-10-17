@@ -61,19 +61,19 @@ Buscar tipo de seguro
             <th>Costo Contratacion</th>
             <th>Costo maximo Asegurado</th>
         </tr>
-        <tr>
         <% if(listaSeguros!=null)
         for(Seguro user : listaSeguros)
         {%>
+        <tr>
         	<td><%=user.getIdSeguro() %></td>
             <td><%=user.getDescripcion()%></td>
             <td><%=user.getCostoContratacion()%></td>
             <td><%=user.getCostoContratacion()%></td>
             <td><%=user.getCostoAsegurado()%></td>
         	
-         <% } %>
             
         </tr>
+         <% } %>
     </table>
 </table>
 </body>

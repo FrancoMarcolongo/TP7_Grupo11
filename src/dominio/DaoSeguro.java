@@ -76,7 +76,7 @@ public class DaoSeguro {
         
         try {
             conn = Conexion.getConexion().getSQLConexion();
-            String query = "SELECT * FROM Seguro";
+            String query = "SELECT * FROM Seguros";
             stmt = conn.prepareStatement(query);
             rs = stmt.executeQuery();
 
